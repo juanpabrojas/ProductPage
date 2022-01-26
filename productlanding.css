@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:400,600&display=swap');
+
+* {
+  box-sizing: border-box;
+} 
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 50px 0 0;
+  line-height: 1.5;
+}
+
+iframe {
+  magin-bottom: 30px;
+  max-width: 80%;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+section h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.bg-yellow {
+  background-color: #FFDB15;
+}
+
+.btn {
+  background-color: #FFDB15;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #8A7400;
+  color: black;
+  display: inline-block;
+  padding: 10px 25px;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.1s ease;
+  font-size: 16px;
+}
+
+.btn-ghost {
+  box-shadow: none;
+  border: none;
+  background-color: black;
+  color: #FFDB15;
+}
+
+.btn:active {
+  box-shadow: 0 0 0 #8A7400;
+  transform: translate(2px, 2px);
+}
+
+btn-ghost:active {
+  transform: none;
+}
+
+.container {
+  display: flex;
+  max-width: 700px;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Nav & Header */
+nav {
+  background-color: #FFDB15;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.header-left {
+  padding-right: 20px;
+  width: 60%;
+}
+
+.header-right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Features Section */
+.feature {
+  background: #FFDB15;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  margin: 30px 1.66%;
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.feature h2 {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.feature p {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+/*Form Section */
+form {
+  margin-bottom: 30px;
+}
+
+form .flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form input [type="email"] {
+  border-radius: 5px;
+  border: 0;
+  color: black;
+  display: inline-block;
+  padding: 10px 25px;
+  width: 100%;
+  font-size: 16px;
+  flex: 1;
+  margin-right: 10px;
+}
+/*Footer Styling */
+footer {
+  background-color: black;
+  color: #FFDB15;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .header-left, .header-right {
+    width: 100%;
+  }
+  
+  .header-right {
+    order: 0;
+  }
+  
+  .header-left {
+    order: 1;
+    text-align: center;
+    padding-left: 20px;
+  }
+  
+  .header-left h1 {
+    display: none;
+  }
+  
+  .feature {
+    width: 100%;
+    margin: 10px;
+  }
+  
+  .flex input {
+    width: 100%;
+    margin: 5px 10px;
+  }
+}
